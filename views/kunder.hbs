@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kunder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/becbank.css" />
+</head>
+
+<body>
+
+    <h1 class="Greenbackground">BEC BANK kunder</h1>
+
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th> <!--change-->
+            <th>Lastname</th> <!--change-->
+            <th>Accno</th> 
+            <th>Balance</th>
+            <th>Rate</th>
+        </tr>
+        {{#each this}}
+        <tr>
+            <td>{{this.firstname}}</td> <!--change-->
+            <td>{{this.lastname}}</td> <!--change-->
+            <td>{{this.accno}}</td>
+            <td>{{this.balance}}</td>
+            <td>{{this.rate}}</td>
+        </tr>
+        {{/each}}
+    </table>
+
+    <h1>Tilføj en kunde</h1>
+
+    <form method="POST" action="kunder/insertkunder"> <!--change-->
+        <p>firstname: <input type="name" name="firstname"></p> <!--change-->
+        <p>lastname: <input type="name" name="lastname"></p>
+        <p>accno: <input type="number" name="accno"></p>
+        <p>balance: <input type="number" name="balance"></p>
+        <p>rate: <input type="number" name="rate"></p>
+
+        <input id="button" type="submit" value="Tilføj">
+    </form>
+
+    <p id="date"></p>
+
+    <script src="javascripts/kunder.js"></script> <!--change-->
+
+</body>
+
+</html>

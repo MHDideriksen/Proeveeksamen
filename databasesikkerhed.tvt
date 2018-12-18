@@ -1,0 +1,8 @@
+Hvordan vil du sikre databasen imod hackerangreb?
+Beskriv 2 metoder, der kan forhindre et SQL-injection angreb.
+Opret en fil med navnet databasesikkerhed.txt, og skriv dit svar heri.
+
+Imod SQL-injection kan man sikre databasen med "prepared statements". 
+Dette er en måde man kan stille spørgsmål i sql, så den kan skelne imellem kode og data, uanset hvilken brugerindgang der bruges.
+"Prepared statements", sikrer at en hacker ikke kan ændre hensigten i koden, med en forespørgsel.
+Også selvom der indsættes kommandoer af hackeren.

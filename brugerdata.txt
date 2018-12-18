@@ -1,0 +1,8 @@
+Hvis der gemmes brugerdata, der er personlige for brugeren (f.eks. brugernavn og password),
+hvordan kan de sikres imod afsløring i tilfælde af et SQL-injection angreb.
+Opret en fil med navnet brugerdata.txt, og skriv dit svar heri.
+
+I tilfælde af et SQL-injection angreb, vil man have hashet og salted sine ting.
+At hashe/hashing er en matematisk algoritme der "hasher"/mapper data til en bit string
+
+at salte er tilfælde data der bruges som en ekstra input til en envejsfunktion der "hashes". Såsom et kodeord/adgangskode
